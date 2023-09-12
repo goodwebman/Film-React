@@ -1,0 +1,116 @@
+.Trailers__section-block {
+    
+    align-items: center;
+}
+
+@media (max-width:1485px) {
+    .Trailers-video {
+        width: 1256px;
+
+
+        &::before {
+            width: 1256px;
+        }
+    }
+
+}
+
+
+@media (max-width: 1280px) {
+    .Trailers-video {
+        width: 856px;
+
+
+        &::before {
+            width: 856px;
+        }
+    }
+
+    .Trailers-text {
+        justify-content: left;
+        gap: 130px;
+    }
+
+    .Trailers-name-block {
+        justify-content: left;
+        gap: 300px;
+    }
+}
+
+
+@media (max-width: 885px) {
+    .Trailers-video {
+        width: 600px;
+        height: 600px;
+        background-position: center;
+
+
+        &::before {
+            width: 600px;
+            height: 600px;
+        }
+    }
+
+    .Trailers-text {
+        flex-direction: column;
+        gap: 20px;
+        align-items: self-start;
+    }
+
+    .Trailers__social {
+        display: none;
+    }
+
+    .Trailers__share {
+        display: none;
+    }
+
+    .Trailers-name-block {
+        gap: 200px;
+    }
+}
+
+
+@media (max-width: 625px) {
+    
+
+    .Trailers-video {
+        width: 400px;
+        height: 400px;
+        background-position: center;
+
+
+        &::before {
+            width: 400px;
+            height: 400px;
+        }
+    }
+
+    .play-trailers {
+    
+        padding-top: 110px;
+    }
+
+    .Trailers-video {
+        position:inherit;
+        
+    }
+
+    .Trailers-title {
+        font-size: 40px;
+    }
+
+    .Trailers-name-block {
+        gap: 36px;
+    }
+}
+
+@media (max-width: 455px) {
+    .Trailers-name-block {
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}

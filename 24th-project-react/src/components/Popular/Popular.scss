@@ -1,0 +1,255 @@
+.Popular-text {
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    &__title {
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    &__line {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        gap: 40px;
+
+
+        & li a {
+            color: rgba(255, 255, 255, 0.35);
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+        
+        
+    }
+
+    
+
+}
+
+
+.list-item-active  {
+    color: #FFF !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+// Slider 
+
+
+.slider-container-popular {
+    position: relative;
+    margin-top: 42px;
+  }
+  
+  .slider-popular {
+    gap: 25px;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  
+.Popular {
+  padding-bottom: 70px;
+}
+  
+  
+
+
+
+// Cards
+
+.Films-cards__img-9 {
+  background-image: url('./../../../public/img/Popular/toys.jpg');
+  width: 337.39px;
+  height: 462.914px;
+  position: relative;
+  width: 337.39px;
+  height: 462.914px;
+  border-radius: 12px;
+  background-position: -.6px;
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    content: '7.80';
+    padding: 5px 13px;
+    border-radius: 5px;
+    background: #89CB36;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    right: 12px;
+    top:12px;
+    
+}
+
+&::before {
+    content: '';
+    background: rgba(54, 87, 203, 0.65);
+    width: 337.39px;
+  height: 462.914px;
+    border-radius: 12px;
+    
+    position: absolute;
+
+    opacity: 0;
+    transition: opacity 0.1s ease;
+
+}
+
+&:hover:before {
+    opacity: 1;
+    
+}
+
+&:hover {
+    .card-btn__inner {
+        opacity: 1;
+    }
+}
+}
+
+
+
+
+.Films-cards__img-10 {
+  background-image: url('./../../../public/img/Popular/bredpit.jpg');
+  position: relative;
+  width: 333.39px;
+  height: 462.99px;
+  border-radius: 12px;
+  background-position: 2px;
+ 
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    content: '7.70';
+    padding: 5px 13px;
+    border-radius: 5px;
+    background: #89CB36;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    right: 12px;
+    top:12px;
+    
+}
+
+&::before {
+    content: '';
+    background: rgba(54, 87, 203, 0.65);
+    width: 333.39px;
+height: 462.914px;
+    border-radius: 12px;
+    
+    position: absolute;
+
+    opacity: 0;
+    transition: opacity 0.1s ease;
+
+}
+
+&:hover:before {
+    opacity: 1;
+    
+}
+
+&:hover {
+    .card-btn__inner {
+        opacity: 1;
+    }
+}
+}
+
+
+
+
+.Films-cards__img-11 {
+  background-image: url('./../../../public/img/Popular/sun.jpg');
+  position: relative;
+  width: 339.39px;
+height: 462.914px;
+  border-radius: 12px;
+  background-position: 2px 2px;
+  background-repeat: no-repeat;
+
+  &::after {
+    position: absolute;
+    content: '7.10';
+    padding: 5px 13px;
+    border-radius: 5px;
+    background: #89CB36;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+    right: 12px;
+    top:12px;
+    
+}
+
+&::before {
+    content: '';
+    background: rgba(54, 87, 203, 0.65);
+    width: 339.39px;
+  height: 462.914px;
+    border-radius: 12px;
+    
+    position: absolute;
+
+    opacity: 0;
+    transition: opacity 0.1s ease;
+
+}
+
+&:hover:before {
+    opacity: 1;
+    
+}
+
+&:hover {
+    .card-btn__inner {
+        opacity: 1;
+    }
+}
+}
+
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap:20px;
+  margin-top: 70px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.prev-btn {
+  transform: rotate(180deg);
+}

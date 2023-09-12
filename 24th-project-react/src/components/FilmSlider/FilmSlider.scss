@@ -1,0 +1,116 @@
+.slider-content {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-wrap: normal;
+  }
+  
+  
+
+
+//
+
+
+.slider-container {
+  padding-top: 50px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  width: 100%;
+  height: 390px;
+    
+    /* Height of the container */
+    
+
+  &::-webkit-scrollbar {
+      width: 7px;
+      height: 7px;
+      background:  #1B2133;
+      border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background: #3657CB;
+      border-radius: 10px;
+  }
+}
+
+
+
+
+
+.slide {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &-1 {
+    background-image: url('./../../../public/img/FilmSlider/mulan.jpg') !important;
+  }
+
+  &-2 {
+    background-image: url('./../../../public/img/FilmSlider/bond.jpg') !important;
+  }
+
+  &-3 {
+    background-image: url('./../../../public/img/FilmSlider/widow.jpg') !important;
+  }
+
+  &-4 {
+    background-image: url('./../../../public/img/FilmSlider/shotgun.jpg') !important;
+    background-position: -1px;
+  }
+  
+}
+
+
+
+
+.slider-img__1 img {
+  width: 35px;
+  height: 31px;
+  
+  
+}
+
+.slider-img {
+
+  
+
+  border-radius: 12px;
+  background-blend-mode: multiply;
+  background-image: url('../../../public/img/FilmSlider/mulan.jpg');
+  
+  background-repeat: no-repeat;
+  width: 342px;
+  height: 244px;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+
+  &:hover {
+    background-color:rgba(54, 87, 203, 0.8);
+  }
+    
+}
+
+
+
+
+
+.slider-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+
+
+.slider-button {
+  z-index: 99999;
+}
+
+
+body {
+  overflow-x:hidden;
+}

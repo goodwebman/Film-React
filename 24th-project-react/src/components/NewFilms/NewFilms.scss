@@ -1,0 +1,587 @@
+
+.NewFilms {
+    padding-top: 55px;
+    
+}
+
+
+// Nav
+
+.Films-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+
+    &__title {
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        color:#fff;
+    }
+
+    &__line {
+        display: flex;
+    }
+
+    &__list {
+        display: flex;
+        gap: 45px;
+    }
+
+    &__item-link {
+        color: rgba(255, 255, 255, 0.35);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+}
+
+.nav__item-active {
+    color: #fff;
+}
+
+
+// Cards
+
+
+.Films-cards {
+    position: relative;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 23px;
+    row-gap: 25px;
+    
+
+    
+    
+    
+
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: 339.39px;
+        max-height: 462.914px;
+        
+
+        
+    }
+
+
+
+
+    &__title {
+        padding-top: 10px;
+        color:#fff;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__genre {
+        padding-top: 5px;
+        color: #F2F60F;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.arrow-up {
+    position: absolute;
+
+    border-radius: 10px;
+    background: #100F14;
+    width: 73px;
+    height: 73px;
+
+    right:-180px;
+    top:700px;
+}
+
+
+.cards__img {
+    border-radius: 10px;
+}
+
+
+
+.Films-cards__img {
+    
+    
+
+    &-1 {
+
+        position: relative;
+        background-image: url('./../../../public/img/FirstView/Cards/card-1.jpg');
+        width: 337.39px;
+        height: 462.914px;
+        border-radius: 12px;
+        background-position: -.6px;
+        background-repeat: no-repeat;
+
+        &::after {
+            position: absolute;
+            content: '8.50';
+            padding: 5px 13px;
+            border-radius: 5px;
+            background: #89CB36;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            right: 12px;
+            top:12px;
+            
+        }
+
+        &::before {
+            content: '';
+            background: rgba(54, 87, 203, 0.65);
+            width: 339.39px;
+            height: 407.914px;
+            border-radius: 12px;
+            
+            position: absolute;
+
+            opacity: 0;
+            transition: opacity 0.1s ease;
+
+        }
+
+        &:hover:before {
+            opacity: 1;
+            
+        }
+
+        &:hover {
+            .card-btn__inner {
+                opacity: 1;
+            }
+        }
+
+        
+    }
+
+    &-2 {
+        position: relative;
+        background-image: url('./../../../public/img/FirstView/Cards/card-2.jpg');
+        width: 337.39px;
+        height: 462.914px;
+        border-radius: 12px;
+        background-position: -1px 2px;
+        background-repeat: no-repeat;
+
+        &::after {
+            position: absolute;
+            content: '8.50';
+            padding: 5px 13px;
+            border-radius: 5px;
+            background: #89CB36;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            right: 12px;
+            top:12px;
+            
+        }
+
+        &::before {
+            content: '';
+            background: rgba(54, 87, 203, 0.65);
+            width: 339.39px;
+            height: 407.914px;
+            border-radius: 12px;
+            
+            position: absolute;
+
+            opacity: 0;
+            transition: opacity 0.1s ease;
+
+        }
+
+        &:hover:before {
+            opacity: 1;
+            
+        }
+
+        &:hover {
+            .card-btn__inner {
+                opacity: 1;
+            }
+        }
+        
+    }
+
+    &-3 {
+        position: relative;
+        background-image: url('./../../../public/img/FirstView/Cards/card-3.jpg');
+        width: 339.39px;
+        height: 462.914px;
+        border-radius: 12px;
+        background-position: -.8px;
+        background-repeat: no-repeat;
+
+        &::after {
+            position: absolute;
+            content: '6.70';
+            padding: 5px 13px;
+            border-radius: 5px;
+            background: #89CB36;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            right: 12px;
+            top:12px;
+            
+        }
+
+        &::before {
+            content: '';
+            background: rgba(54, 87, 203, 0.65);
+            width: 339.39px;
+            height: 407.914px;
+            border-radius: 12px;
+            
+            position: absolute;
+
+            opacity: 0;
+            transition: opacity 0.1s ease;
+
+        }
+
+        &:hover:before {
+            opacity: 1;
+            
+        }
+
+        &:hover {
+            .card-btn__inner {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-4 {
+        position: relative;
+        background-image: url('./../../../public/img/FirstView/Cards/card-4.jpg');
+        width: 339.39px;
+        height: 462.914px;
+        border-radius: 12px;
+
+        &::after {
+            position: absolute;
+            content: '8.00';
+            padding: 5px 13px;
+            border-radius: 5px;
+            background: #89CB36;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            right: 12px;
+            top:12px;
+            
+        }
+        &::before {
+            content: '';
+            background: rgba(54, 87, 203, 0.65);
+            width: 339.39px;
+            height: 407.914px;
+            border-radius: 12px;
+            
+            position: absolute;
+
+            opacity: 0;
+            transition: opacity 0.1s ease;
+
+        }
+
+        &:hover:before {
+            opacity: 1;
+            
+        }
+
+        &:hover {
+            .card-btn__inner {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-5 {
+        position: relative;
+        background-image: url('./../../../public/img/FirstView/Cards/card-5.jpg');
+        width: 339.39px;
+        height: 462.914px;
+        border-radius: 12px;
+
+        &::after {
+            position: absolute;
+            content: '8.10';
+            padding: 5px 13px;
+            border-radius: 5px;
+            background: #89CB36;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            right: 12px;
+            top:12px;
+            
+        }
+
+        &::before {
+            content: '';
+            background: rgba(54, 87, 203, 0.65);
+            width: 339.39px;
+            height: 407.914px;
+            border-radius: 12px;
+            
+            position: absolute;
+
+            opacity: 0;
+            transition: opacity 0.1s ease;
+
+        }
+
+        &:hover:before {
+            opacity: 1;
+            
+        }
+
+        &:hover {
+            .card-btn__inner {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-6 {
+        position: relative;
+        background-image: url('./../../../public/img/FirstView/Cards/card-6.jpg');
+        width: 339.39px;
+        height: 462.914px;
+        border-radius: 12px;
+        background-position: -.4px;
+        background-repeat: no-repeat;
+
+        &::after {
+            position: absolute;
+            content: '4.90';
+            padding: 5px 13px;
+            border-radius: 5px;
+            background: #CB3F36;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            right: 12px;
+            top:12px;
+            
+        }
+
+        &::before {
+            content: '';
+            background: rgba(54, 87, 203, 0.65);
+            width: 339.39px;
+            height: 407.914px;
+            border-radius: 12px;
+            
+            position: absolute;
+
+            opacity: 0;
+            transition: opacity 0.1s ease;
+
+        }
+
+        &:hover:before {
+            opacity: 1;
+            
+        }
+
+        &:hover {
+            .card-btn__inner {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-7 {
+        position: relative;
+        background-image: url('./../../../public/img/FirstView/Cards/card-7.jpg');
+        width: 339.39px;
+        height: 462.914px;
+        border-radius: 12px;
+        background-position: -.6px;
+        background-repeat: no-repeat;
+
+        &::after {
+            position: absolute;
+            content: '6.20';
+            padding: 5px 13px;
+            border-radius: 5px;
+            background: #89CB36;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            right: 12px;
+            top:12px;
+            
+        }
+
+        &::before {
+            content: '';
+            background: rgba(54, 87, 203, 0.65);
+            width: 339.39px;
+            height: 387.914px;
+            border-radius: 12px;
+            
+            position: absolute;
+
+            opacity: 0;
+            transition: opacity 0.1s ease;
+
+        }
+
+        &:hover:before {
+            opacity: 1;
+            
+        }
+
+        &:hover {
+            .card-btn__inner {
+                opacity: 1;
+            }
+        }
+    }
+
+    &-8 {
+        position: relative;
+        background-image: url('./../../../public/img/FirstView/Cards/card-8.jpg');
+        width: 339.39px;
+        height: 462.914px;
+        border-radius: 12px;
+
+        &::after {
+            position: absolute;
+            content: '6.90';
+            padding: 5px 13px;
+            border-radius: 5px;
+            background: #89CB36;
+
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #fff;
+            right: 12px;
+            top:12px;
+            
+        }
+
+        &::before {
+            content: '';
+            background: rgba(54, 87, 203, 0.65);
+            width: 339.39px;
+            height: 407.914px;
+            border-radius: 12px;
+            
+            position: absolute;
+
+            opacity: 0;
+            transition: opacity 0.1s ease;
+
+        }
+
+        &:hover:before {
+            opacity: 1;
+            
+        }
+
+        &:hover {
+            .card-btn__inner {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+
+
+// Button
+
+.Films-btn {
+
+
+    width: 200px;
+    height: 71px;
+    border-radius: 10px;
+    border: 2px solid #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.5%;
+    transition: background .2s ease-in;
+    
+    &:hover {
+        
+        border: none;
+        background: #3657CB;
+        box-shadow: 0px 0px 15px 0px rgba(72, 113, 255, 0.80);
+        transform: translateY(4px);
+
+    }
+    
+}
+
+.Films-button {
+    display: flex;
+    justify-content: center;
+    padding-top: 54px;
+
+    
+}
+
+.card-btn__inner {
+    opacity: 0;
+    position: absolute;
+    width: 224px;
+    height: 71px;
+    top:205px;
+    left: 62px;
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 0px rgba(55, 94, 232, 0.40);
+
+    color: #3657CB;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.5%; /* 29.97px */
+}

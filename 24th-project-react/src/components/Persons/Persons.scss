@@ -1,0 +1,211 @@
+.Persons {
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__title {
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    &__time a {
+        color: #6D717D;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+    }
+
+    &__time {
+        display: flex;
+        gap: 40px;
+    }
+
+    padding-bottom: 65px;
+}
+
+.time-active {
+    color:#fff !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+// Persons__img
+
+.Persons__img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+
+    &-left {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 36px;
+        
+        padding-top: 330px;
+        background-image: url('./../../../public/img/Persons/tarantino.jpg');
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        width: 444px;
+        height: 444px;
+
+        &::before {
+            content: '1-е место';
+            position: absolute;
+            width: 70px;
+            height: 17px;
+            top: 12px;
+            left: 16px;
+            color: #F2F60F;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+
+    &-right {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding-left: 36px;
+        
+        padding-top: 330px;
+        background-image: url('./../../../public/img/Persons/Stethem.jpg');
+        background-repeat: no-repeat;
+        border-radius: 12px;
+        width: 444px;
+        height: 444px;
+
+        &::before {
+            content: '2-е место';
+            position: absolute;
+            width: 70px;
+            height: 17px;
+            top: 12px;
+            left: 16px;
+            color: #F2F60F;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 20px;
+        }
+    }
+}
+
+.Person {
+    &__name {
+        color: #FFF;
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        
+
+        &-eng {
+            color: rgba(255, 255, 255, 0.35);
+            padding-top: 7px;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 9px;
+        }
+    }
+
+    &__year {
+        color: #F2F60F;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px; /* 133.333% */
+    }
+}
+
+
+
+// Ul
+
+.container-persons {
+    width: 440px;
+    margin: 0 auto;
+}
+
+
+.Persons__list {
+    display: flex;
+    flex-direction: column;
+    width: 496.934px;
+    height: 444px;
+    border-radius: 12px;
+    background: #1B2133;
+
+    &-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 111px;
+        border-bottom: 2px solid #1E2538;
+        
+    }
+
+    &-item:last-child {
+        border-bottom: none;
+    }
+
+    &-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-top {
+        padding-right: 29px;
+    }
+
+    &-name {
+        color: #FFF;
+        
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 2.5px;
+
+        &-eng {
+            color: #3B486B;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            padding-bottom: 4.5px;
+        }
+
+        
+    }
+
+    &-year {
+        color: #F2F60F;
+    
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    &-top {
+        color: #F2F60F;
+       
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+}

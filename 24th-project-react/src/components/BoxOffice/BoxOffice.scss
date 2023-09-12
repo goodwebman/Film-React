@@ -1,0 +1,158 @@
+.BoxOffice {
+    background: #151A26;
+
+    &-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        &__text {
+
+            display: flex;
+            align-items: center;
+            gap: 19px;
+
+
+            &-title {
+                font-size: 65px;
+                font-style: normal;
+                font-weight: 900;
+                line-height: normal;
+                
+            }
+
+            &-date {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    &-line {
+        height: 2px;
+    }
+
+
+
+    &-country {
+        display: flex;
+        align-items: center;
+        gap:35px;
+
+        li a {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            color: #6D717D;
+        }
+    }
+}
+
+.country-active a {
+    color: #FFF !important;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.BoxOffice-information-block {
+    padding-bottom: 62px;
+}
+
+
+// Img section
+
+.BoxOffice-section__img-item {
+    display: flex;
+    align-items: center;
+    gap:12px;
+}
+
+
+
+
+
+.BoxOffice-section__picture {
+    width: 95.704px;
+    height: 141.203px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    
+    
+}
+
+
+.BoxOffice-img-1 {
+    background-image: url('./../../../public/img/BoxOffice/bloodshot.jpg');
+    background-position: 1px 0;
+}   
+
+.BoxOffice-img-2 {
+    background-image: url('./../../../public/img/BoxOffice/next.jpg');
+    background-position: 1px 0;
+
+}
+
+.BoxOffice-img-3 {
+    background-image: url('./../../../public/img/BoxOffice/invisguy.jpg');
+    background-position: 1px 1px;
+}
+
+.BoxOffice-img-4 {
+    background-image: url('./../../../public/img/BoxOffice/sonicmovie.jpg');
+    background-position: 1px 1px;
+}
+
+
+.BoxOffice-img-5 {
+    background-image: url('./../../../public/img/BoxOffice/djentemlen.jpg');
+    background-position: 1px 0;
+}
+
+
+.BoxOffice-section__img {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+
+.BoxOffice {
+
+    &-title {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 11px;
+        max-width: 150px;
+    }
+
+
+    &-cost {
+        color: #F2F60F;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        padding-bottom: 4px;
+    }
+
+
+    &-cost-long {
+        color: rgba(255, 255, 255, 0.41);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+}
+

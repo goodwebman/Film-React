@@ -1,0 +1,183 @@
+.Email {
+    padding-top: 100px;
+    background-color: #151A26;
+
+    
+}
+
+.Email-block {
+    position: relative;
+    background-image: url('./../../../public/img/Email/email-bg.jpg');
+    
+
+    width: 1428px;
+    height: 548px;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+
+   
+
+    
+    
+}
+
+.Email {
+    &__logo {
+        padding-top: 76px;
+        padding-bottom: 55px;
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        gap:13px;
+        
+    }
+
+    &__follow {
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    &__info {
+        padding-top: 26px;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 140.2%; /* 30.844px */
+        width: 704px;
+        height: 56px;
+    }
+
+    &__form-block {
+        position: relative;
+        padding-top: 54px;
+
+        
+    }
+}
+
+.email-input {
+    border-radius: 10px;
+    background: #FFF;
+    padding: 22px 27px;
+    width: 425px;
+    height: 71px;
+    color: black;
+}
+
+.email-btn {
+    color: #151A26;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.5%;
+    border-radius: 10px;
+    background: #F2F60F !important;
+    padding: 21px 38px;
+}
+
+.email-form {
+    display: flex;
+    gap: 8px;
+}
+
+// check
+
+/* STYLE C */
+
+.checkbox.style-c {
+    display: inline-flex;
+    position: relative;
+    padding-left: 36px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    align-items: center;
+  }
+  .checkbox.style-c input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  .checkbox.style-c input:checked ~ .checkbox__checkmark {
+    background-color: #F2F60F;
+  }
+  .checkbox.style-c input:checked ~ .checkbox__checkmark:after {
+    opacity: 1;
+  }
+  .checkbox.style-c:hover input ~ .checkbox__checkmark {
+    background-color: #eee;
+  }
+  .checkbox.style-c:hover input:checked ~ .checkbox__checkmark {
+    background-color:#F2F60F;
+  }
+  .checkbox.style-c .checkbox__checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    transition: background-color 0.25s ease;
+    border-radius: 4px;
+  }
+  .checkbox.style-c .checkbox__checkmark:after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+  }
+  .checkbox.style-c .checkbox__body {
+    color: #151A26;
+    line-height: 1.4;
+    font-size: 16px;
+  }
+
+.checkbox-label {
+    color: #FFF;
+    text-align: center;
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140.2%; /* 23.834px */
+
+    span {
+        color: #F2F60F;
+
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140.2%;
+        text-decoration-line: underline;
+    }
+}
+
+
+.check {
+    padding-top: 22px;
+    
+}

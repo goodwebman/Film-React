@@ -1,0 +1,205 @@
+.News-slides {
+    display: flex;
+    gap:13px;
+
+}
+
+.News {
+    padding-bottom: 82px;
+}
+
+.News-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 65px;
+
+    &__title {
+        color: #FFF;
+        font-size: 65px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    &__more-text {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    &__more {
+        display: flex;
+        align-items: center;
+        gap: 21px;
+    }
+}
+
+
+.News-bond__block {
+    position: relative;
+    border-radius: 12px;
+    background-image: url('./../../../public/img/News/bond-pistol.jpg');
+    width: 1159px;
+    height: 772px;
+}
+
+
+.Bond-nav {
+    display: flex;
+    
+    gap: 12px;
+    top: 52px;
+    left: 32px;
+    position: absolute;
+
+    &__date {
+        display: flex;
+        align-items: center;
+        gap:12px;
+    }
+
+
+    &__shows {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
+    &__message {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+}
+
+.Bond-footer {
+    position: absolute;
+    bottom: 52px;
+    left: 32px;
+
+    &__title {
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        
+    }
+
+    &__info {
+        font-size: 20px;
+        line-height: 40px;
+        max-width: 990px;
+        height: 109px;
+        font-style: normal;
+        font-weight: 400;
+    }
+}
+
+.Slide__blocks {
+    height: 772px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 6px;
+}
+
+.Slide__block {
+    border-radius: 12px;
+    position: relative;
+    width: 254.804px;
+    height: 182.647px;
+    background-image: url('./../../../public/img/News/sonic.jpg');
+    transition: opacity 0.15s ease;
+    &::before {
+        content: '';
+        background: rgba(54, 87, 203, 0.58);
+        width: 254.804px;
+        height: 182.647px;
+        border-radius: 12px;
+        
+        position: absolute;
+
+        opacity: 0;
+        transition: opacity 0.15s ease;
+
+    }
+
+    &:hover:before {
+        opacity: 1;
+        
+    }
+
+    &:hover {
+        transition: opacity 0.15s ease;
+        .slide-date {
+            opacity: 0;
+        }
+
+        .slide-info {
+            opacity: 0;
+        }
+
+        .slide-hover {
+            opacity: 1;
+        }
+    }
+}
+
+
+.slide-date {
+    transition: opacity 0.15s ease;
+    color:#fff;
+    top:11px;
+    left: 12px;
+    position: absolute;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 191.2%; /* 28.68px */
+}
+
+.slide-info {
+    transition: opacity 0.15s ease;
+    color:#fff;
+    position: absolute;
+    bottom:18px;
+    left: 12px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    width: 245px;
+}
+
+.slide-hover {
+    transition: opacity .3s ease;
+    opacity: 0;
+    left: 32px;
+    top: 60px;
+    padding: 11px 26px;
+    position: absolute;
+    color:#fff;
+    border-radius: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 166.5%; /* 29.97px */
+    border: 2px solid #FFF;
+}
+.slide-news {
+    &-2 {
+        background-image: url('./../../../public/img/News/bond-small.jpg');
+    }
+
+    &-3 {
+        background-image: url('./../../../public/img/News/glasses.jpg');
+        background-position: 0px -1px;
+        
+    }
+
+    &-4 {
+        background-image: url('./../../../public/img/News/sand.jpg');
+    }
+}
